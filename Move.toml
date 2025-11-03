@@ -1,0 +1,17 @@
+[package]
+name = "MosaicAMMIntegrationExample"
+version = "1.0.0"
+authors = []
+
+[addresses]
+example = "_"
+
+[dev-addresses]
+
+[dependencies.AptosFramework]
+git = "https://github.com/movementlabsxyz/aptos-core.git"
+rev = "movement"
+subdir = "aptos-move/framework/aptos-framework"
+
+[dependencies.MosaicAMM]
+local = "./interface/mosaic_amm"

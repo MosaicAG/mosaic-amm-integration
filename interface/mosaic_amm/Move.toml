@@ -1,0 +1,12 @@
+[package]
+name = "MosaicAMM"
+version = "1.0.0"
+authors = []
+
+[addresses]
+mosaic_amm = "0x26a95d4bd7d7fc3debf6469ff94837e03e887088bef3a3f2d08d1131141830d3" # mainnet
+
+[dependencies.AptosFramework]
+git = "https://github.com/movementlabsxyz/aptos-core.git"
+rev = "movement"
+subdir = "aptos-move/framework/aptos-framework"
