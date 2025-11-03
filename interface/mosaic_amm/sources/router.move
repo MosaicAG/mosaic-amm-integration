@@ -77,54 +77,21 @@ module mosaic_amm::router {
         abort 0
     }
 
-    /// View function to get liquidity pool for two coins `X` and `Y`.
-    ///
-    /// # Type Parameters
-    ///
-    /// * `X` - type of the first coin.
-    /// * `Y` - type of the second coin.
-    ///
-    /// # Parameters
-    ///
-    /// * `is_stable` - boolean indicating whether to get a stable pool.
-    ///
-    /// Returns `Object<LiquidityPool>`.
     #[view]
-    public fun get_pool_both_coins<X, Y>(is_stable: bool): Object<LiquidityPool> {
+    public fun get_pool_both_coins<X, Y>(_is_stable: bool): Object<LiquidityPool> {
         abort 0
     }
 
-    /// View function to get liquidity pool for one coin and one fungible asset.
-    ///
-    /// # Type Parameters
-    ///
-    /// * `X` - type of the coin.
-    ///
-    /// # Parameters
-    ///
-    /// * `token` - metadata of the fungible asset.
-    /// * `is_stable` - boolean indicating whether to get a stable pool.
-    ///
-    /// Returns `Object<LiquidityPool>`.
     #[view]
-    public fun get_pool_one_coin<X>(token: Object<Metadata>, is_stable: bool): Object<LiquidityPool> {
+    public fun get_pool_one_coin<X>(_token: Object<Metadata>, _is_stable: bool): Object<LiquidityPool> {
         abort 0
     }
 
-    /// View function to get liquidity pool for two fungible assets.
-    ///
-    /// # Parameters
-    ///
-    /// * `token_x` - metadata of the first fungible asset.
-    /// * `token_y` - metadata of the second fungible asset.
-    /// * `is_stable` - boolean indicating whether to get a stable pool.
-    ///
-    /// Returns `Object<LiquidityPool>`.
     #[view]
     public fun get_pool_both_assets(
-        token_x: Object<Metadata>,
-        token_y: Object<Metadata>,
-        is_stable: bool,
+        _token_x: Object<Metadata>,
+        _token_y: Object<Metadata>,
+        _is_stable: bool,
     ): Object<LiquidityPool> {
         abort 0
     }
